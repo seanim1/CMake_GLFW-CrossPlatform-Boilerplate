@@ -24,7 +24,10 @@ First, you need to install `vcpkg`, a C++ package manager.
    ```bash
    vcpkg install glfw3:x64-windows
 5. Now you should be able to locate .cmake files (like GLFW3Config.cmake) at "C:\vcpkg\installed\x64-windows\share\glfw3" and "glfw3.dll" at "C:\vcpkg\installed\x64-windows\bin"
-### Linux: Installing GLFW
-
+### Linux (Ubuntu): Installing GLFW
+1. Open terminal **Bash**.
+   ```bash
+   sudo apt-get install libglfw3 libglfw3-dev
+2. Now you should be able to locate .cmake files (like GLFW3Config.cmake) at "/usr/lib/x86_64-linux-gnu/cmake/glfw3" and "libglfw.so" at "/usr/lib/x86_64-linux-gnu/libglfw.so"
 ## Run CMake:
 
