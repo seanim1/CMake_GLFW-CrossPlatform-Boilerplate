@@ -27,6 +27,6 @@ Now install the GLFW3.
 1. Clone the `vcpkg` repository in your C drive root:
 
    ```bash
-   ./vcpkg install glfw3:x64-windows
+   vcpkg install glfw3:x64-windows
 
 2. Now you should be able to locate .cmake files at "C:\vcpkg\installed\x64-windows\share\glfw3" and "glfw3.dll" at "C:\vcpkg\installed\x64-windows\bin"
