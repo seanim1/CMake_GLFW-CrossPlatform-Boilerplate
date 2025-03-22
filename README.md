@@ -12,7 +12,7 @@ First, you need to install `vcpkg`, a C++ package manager.
 2. Clone the `vcpkg` repository in your C drive root:
 
    ```bash
-   cd \ # Navigate to the root of the C:\ drive
+   cd \
    git clone https://github.com/microsoft/vcpkg.git
 3. Navigate to the `vcpkg` directory and execute the bootstrap script:
 
