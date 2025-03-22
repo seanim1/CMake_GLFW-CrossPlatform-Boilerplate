@@ -1,10 +1,10 @@
 # CMake GLFW skeleton for Windows, Linux, MacOS
 
-## Setup Instructions for Windows
+## Installing GLFW for CMake
 
 using vcpkg to download glfw (make sure you have installed Git though)
 
-### Step 1: Install vcpkg
+### Windows: Installing GLFW
 
 First, you need to install `vcpkg`, a C++ package manager.
 
@@ -19,14 +19,12 @@ First, you need to install `vcpkg`, a C++ package manager.
    ```bash
    cd vcpkg
    .\bootstrap-vcpkg.bat
-
-### Step 2: Install glfw
-
-Now install the GLFW3.
-
-1. Clone the `vcpkg` repository in your C drive root:
+4. Clone the `vcpkg` repository in your C drive root:
 
    ```bash
    vcpkg install glfw3:x64-windows
+5. Now you should be able to locate .cmake files (like GLFW3Config.cmake) at "C:\vcpkg\installed\x64-windows\share\glfw3" and "glfw3.dll" at "C:\vcpkg\installed\x64-windows\bin"
+### Linux: Installing GLFW
 
-2. Now you should be able to locate .cmake files (like GLFW3Config.cmake) at "C:\vcpkg\installed\x64-windows\share\glfw3" and "glfw3.dll" at "C:\vcpkg\installed\x64-windows\bin"
+## Run CMake:
+
