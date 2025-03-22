@@ -3,6 +3,7 @@
  
 # Allow the CMakeLists.txt file and src/include directories
 !CMakeLists.txt
+!FindGLFW.cmake
 !src/
 !include/
 
