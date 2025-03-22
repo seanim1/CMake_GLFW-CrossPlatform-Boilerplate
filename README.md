@@ -2,7 +2,7 @@
 
 ## Setup Instructions for Windows
 
-using vcpkg to download glfw
+using vcpkg to download glfw (make sure you have installed Git though)
 
 ### Step 1: Install vcpkg
 
