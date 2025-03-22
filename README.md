@@ -29,4 +29,4 @@ Now install the GLFW3.
    ```bash
    vcpkg install glfw3:x64-windows
 
-2. Now you should be able to locate .cmake files at "C:\vcpkg\installed\x64-windows\share\glfw3" and "glfw3.dll" at "C:\vcpkg\installed\x64-windows\bin"
+2. Now you should be able to locate .cmake files (like GLFW3Config.cmake) at "C:\vcpkg\installed\x64-windows\share\glfw3" and "glfw3.dll" at "C:\vcpkg\installed\x64-windows\bin"
