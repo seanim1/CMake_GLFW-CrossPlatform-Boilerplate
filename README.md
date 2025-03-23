@@ -29,5 +29,14 @@ First, you need to install `vcpkg`, a C++ package manager.
    ```bash
    sudo apt-get install libglfw3 libglfw3-dev
 2. Now you should be able to locate .cmake files (like GLFW3Config.cmake) at "/usr/lib/x86_64-linux-gnu/cmake/glfw3" and "libglfw.so" at "/usr/lib/x86_64-linux-gnu/libglfw.so"
+
+### MacOS: Installing GLFW
+1. Open terminal **Bash**.
+   ```bash
+   brew install glfw
+2. Now you should be able to locate
+Header (GLFW/glfw3.h) at: "/opt/homebrew/include"
+Dynamic Library at: "/opt/homebrew/lib/libglfw.dylib"
+
 ## Run CMake:
 
