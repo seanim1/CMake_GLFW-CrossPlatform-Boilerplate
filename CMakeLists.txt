@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(GLFWExample)
+project(PROJECT_NAME)
 
 # Set the C++ standard
 set(CMAKE_CXX_STANDARD 14)
@@ -31,28 +31,28 @@ else() # Linux/macOS
 endif()
 
 # Add the main.cpp file to the project
-add_executable(GLFWExample main.cpp)
+add_executable(EXECUTABLE_TARGET_NAME main.cpp)
 
 
 # Only add post-build commands after the target is created
 if(WIN32)
     # Link GLFW with your project
-    target_link_libraries(GLFWExample glfw)
+    target_link_libraries(EXECUTABLE_TARGET_NAME glfw)
 
-    add_custom_command(TARGET GLFWExample POST_BUILD
+    add_custom_command(TARGET EXECUTABLE_TARGET_NAME POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         "${GLFW_DLL_PATH}"
-        $<TARGET_FILE_DIR:GLFWExample>/glfw3.dll)
+        $<TARGET_FILE_DIR:EXECUTABLE_TARGET_NAME>/glfw3.dll)
 else()
     # Include GLFW headers
     include_directories(${GLFW_INCLUDE_DIR})
 
     # Link GLFW with your project
-    target_link_libraries(GLFWExample ${GLFW_LIBRARY})
+    target_link_libraries(EXECUTABLE_TARGET_NAME ${GLFW_LIBRARY})
 
-    add_custom_command(TARGET GLFWExample POST_BUILD
+    add_custom_command(TARGET EXECUTABLE_TARGET_NAME POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         "${GLFW_LIBRARY}"
-        $<TARGET_FILE_DIR:GLFWExample>/libglfw.so)
+        $<TARGET_FILE_DIR:EXECUTABLE_TARGET_NAME>/libglfw.so)
 endif()
 
