@@ -10,6 +10,7 @@ if(WIN32)
 
     # Find GLFW using FindGLFW.cmake
     # This probably looks for the include file: 'GLFW/glfw3.h'
+    # looks like "GLFW3" only works on WIN32, and "GLFW" only works on Linux...
     find_package(GLFW3 REQUIRED)
 
     # The path to your glfw3.dll file
@@ -25,8 +26,7 @@ else() # Linux/macOS
     #   1. CMake first looks in CMAKE_MODULE_PATH for FindGLFW.cmake
     #   2. If found, it runs FindGLFW.cmake, which uses find_path() and find_library() to locate GLFW.
     # Find GLFW using FindGLFW.cmake
-    find_package(GLFW3 REQUIRED)
-
+    find_package(GLFW REQUIRED)
 endif()
 
 # Add the main.cpp file to the project

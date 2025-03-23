@@ -9,10 +9,12 @@
 # This searches for the directory that contains the GLFW header file (glfw3.h).
 # It sets GLFW_INCLUDE_DIR to the directory where GLFW/glfw3.h is found
 find_path(GLFW_INCLUDE_DIR NAMES GLFW/glfw3.h)
+message(STATUS "GLFW_INCLUDE_DIR: ${GLFW_INCLUDE_DIR}")
 
 # This searches for the GLFW library file (libglfw.so on Linux, glfw3.lib on Windows).
 # It sets GLFW_LIBRARY to the full path of the GLFW library.
 find_library(GLFW_LIBRARY NAMES glfw glfw3)
+message(STATUS "GLFW_LIBRARY: ${GLFW_LIBRARY}")
 
 # This includes a CMake module that provides standard argument handling for find_package()
 include(FindPackageHandleStandardArgs)
